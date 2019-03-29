@@ -62,6 +62,7 @@
         <ul>
           <li><span>!g</span> →   Google</li>
           <li><span>!d</span> →   DuckDuckGo</li>
+          <li><span>!r</span> →   Reddit</li>
           <li><span>!so</span> → Stack Overflow</li>
           <li><span>!sh</span> → Shodan</li>
           <li><span>!av</span> → Audio/Video</li>
