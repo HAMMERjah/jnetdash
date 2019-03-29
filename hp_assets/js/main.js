@@ -1,4 +1,4 @@
-var menuHidden = false;
+var menuHidden = true;
 
 console.log(`%c ________________________________________
 < Welcome to the Jawanet >

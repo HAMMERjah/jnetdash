@@ -55,9 +55,11 @@
       ?>
     </div>
 
-    <div id="searchBar" class='menu-item-bg'>
-        <input type="text" id='searchInput' placeholder="ex. !g searches Google">
-        <input type="button" value="search" class="close-btn">
+    <div class="searchWrapper">
+      <div id="searchBar" class='searchContainer'>
+          <input type="text" id='searchInput' placeholder="ex. !g searches Google">
+          <input type="button" value="search" class="close-btn">
+      </div>
     </div>
 
     <script type="text/javascript" src="hp_assets/js/jquery.min.js"></script>
