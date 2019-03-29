@@ -23,7 +23,7 @@ body.menu-shown #bg-overlay {opacity: 0.3;}
 #searchInput {border: 3px solid #fff; padding: 15px 30px; border-radius: 50px; outline: none; font-size: 18px; width: 100%; flex-grow: 1;}
 
 #searchHelp{
-  visibility: hidden;
+  display:none;
 }
 #searchHelp > ul{
   list-style-type: none;
