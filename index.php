@@ -57,7 +57,17 @@
 
     <div id="search-wrap" class="menu-item bg">
       <div id="searchBar" class='searchContainer'>
-          <input type="text" id='searchInput' placeholder="ex. !g searches Google">
+          <input type="text" id='searchInput' placeholder="ex. !g searches Google" onfocus="showSearchHelp()" onblur="hideSearchHelp()">
+      </div>
+      <div id="searchHelp">
+        <ul>
+          <li><span>!g</span> →   Google</li>
+          <li><span>!d</span> →   DuckDuckGo</li>
+          <li><span>!so</span> → Stack Overflow</li>
+          <li><span>!sh</span> → Shodan</li>
+          <li><span>!av</span> → Audio/Video</li>
+          <li><span>!sa</span> → Software Archive</li>
+        </ul>
       </div>
     </div>
 

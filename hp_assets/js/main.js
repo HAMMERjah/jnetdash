@@ -82,6 +82,14 @@ function setMenuVisibility(visible) {
   }
 }
 
+function showSearchHelp(){
+  $("#searchHelp").fadeIn();
+}
+
+function hideSearchHelp(){
+  $("#searchHelp").fadeOut();
+}
+
 if ($.config.idle_timer) {
   var inactivityTime = function () {
     var t;
