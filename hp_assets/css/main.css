@@ -18,8 +18,8 @@ body.menu-shown #bg-overlay {opacity: 0.3;}
 #links-wrap a {transition: .3s all;}
 #links-wrap .link {display: inline-block; float: left; text-align: center;}
 
-#pic-info-wrap {color: #fff; font-size: 16px; position: absolute; bottom: 15px; left: 15px;}
-#pic-info-wrap a:hover, #pic-info-wrap a:active {color: #fff; text-decoration: none;}
+#search-wrap {width: 50%; height: 50%; margin: 25% auto 0; position: relative;}
+
 
 #clock-wrap {color: #fff; font-size: 20px; position: absolute; top: 15px; right: 15px;}
 
