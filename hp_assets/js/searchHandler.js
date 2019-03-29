@@ -41,13 +41,13 @@ function handleQuery(event, query) {
                     }
                 }
                 if (qList.length > 1) {
-                    window.open = searchSources[ssi][1].replace("{Q}", encodeURIComponent(query.replace(keyword, ""))).trim();
+                    window.location = searchSources[ssi][1].replace("{Q}", encodeURIComponent(query.replace(keyword, ""))).trim();
                 } else {
                     searchInput.placeholder = searchSources[ssi][2];
                     searchInput.value = "";
                 }
             } else {
-                window.open = searchSources[ssi][1].replace("{Q}", encodeURIComponent(query));
+                window.location = searchSources[ssi][1].replace("{Q}", encodeURIComponent(query));
             }
         }
     }
