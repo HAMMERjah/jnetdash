@@ -57,7 +57,7 @@
 
     <div id="search-wrap" class="menu-item bg">
       <div id="searchBar" class='searchContainer'>
-          <input type="text" id='searchInput' placeholder="ex. !g searches Google" onfocus="showSearchHelp()" onblur="hideSearchHelp()">
+          <input type="text" id='searchInput' placeholder="ex. !g searches Google" onfocus="showSearchHelp()" onblur="hideSearchHelp()" onkeydown="handleQuery(event,this.value)">
       </div>
       <div id="searchHelp">
         <ul>
@@ -77,5 +77,6 @@
       $.config = <?= json_encode($config); ?>;
     </script>
     <script type="text/javascript" src="hp_assets/js/main.js"></script>
+    <script type="text/javascript" src="hp_assets/js/searchHandler.js"></script>
   </body>
 </html>
