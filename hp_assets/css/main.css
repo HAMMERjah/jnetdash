@@ -19,8 +19,8 @@ body.menu-shown #bg-overlay {opacity: 0.3;}
 #links-wrap .link {display: inline-block; float: left; text-align: center;}
 
 #search-wrap {width: 50%; margin: 1em auto 0; position: relative;}
-.searchContainer{display:flex;}
-#searchInput {border: 3px solid #fff; padding: 15px 30px; border-radius: 50px; outline: none; font-size: 18px;}
+.searchContainer{display:table;}
+#searchInput {border: 3px solid #fff; display:table-cell; width:100%; padding: 15px 30px; border-radius: 50px; outline: none; font-size: 18px;}
 
 
 #clock-wrap {color: #fff; font-size: 20px; position: absolute; top: 15px; right: 15px;}
