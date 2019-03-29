@@ -88,6 +88,7 @@ function showSearchHelp(){
 
 function hideSearchHelp(){
   $("#searchHelp").fadeOut();
+  $("searchInput").val('');
 }
 
 if ($.config.idle_timer) {
