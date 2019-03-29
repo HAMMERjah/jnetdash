@@ -8,15 +8,3 @@
     outline: none;
     font-size: 18px;
 }
-.close-btn{
-    top: 21px;
-    right: 50px;
-    cursor: pointer;
-    color: #fc913a;
-    border: 0px;
-    width: 120px;
-    height: 55px;
-    outline: none;
-    text-transform: uppercase;
-    font-weight: bold;
-}

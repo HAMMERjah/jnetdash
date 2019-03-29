@@ -58,7 +58,6 @@
     <div id="search-wrap" class="menu-item bg">
       <div id="searchBar" class='searchContainer'>
           <input type="text" id='searchInput' placeholder="ex. !g searches Google">
-          <input type="button" value="search" class="close-btn">
       </div>
     </div>
 
