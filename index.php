@@ -25,6 +25,7 @@
       <link rel="stylesheet" type="text/css" href="hp_assets/css/font-awesome.min.css" />
       <link rel="stylesheet" type="text/css" href="hp_assets/css/bootstrap.min.css" />
       <link rel="stylesheet" type="text/css" href="hp_assets/css/main.css" />
+      <link rel="stylesheet" type="text/css" href="hp_assets/css/search.css" />
       <style type="text/css">
         #links-wrap a:hover {color: <?= $config['hover_color']; ?>;}
       </style>
@@ -52,6 +53,11 @@
           echo '<div class="link col-md-4 col-xs-12"><a href="' . $link . '" title="' . $item['alt'] . '"><i class="fa fa-' . $icon . '"></i></a></div>';
         }
       ?>
+    </div>
+
+    <div id="searchBar" class='menu-item-bg'>
+        <input type="text" id='searchInput' placeholder="ex. !g searches Google">
+        <input type="button" value="search" class="close-btn">
     </div>
 
     <script type="text/javascript" src="hp_assets/js/jquery.min.js"></script>

@@ -1,0 +1,25 @@
+.searchInput{
+    width: 400px;
+    border: 3px solid #fff;
+    background: transparent;
+    padding: 15px 30px;
+    border-radius: 50px;
+    outline: none;
+    font-size: 18px;
+    color: #fff;
+  }
+.close-btn{
+    position: absolute;
+    top: 21px;
+    right: 50px;
+    cursor: pointer;
+    color: #fc913a;
+    background: #fff;
+    border: 0px;
+    width: 120px;
+    height: 55px;
+    border-radius: 50px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
