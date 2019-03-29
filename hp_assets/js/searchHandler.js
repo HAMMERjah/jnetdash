@@ -51,6 +51,7 @@ function handleQuery(event, query) {
         }
     }
     if (key === 27) { // esc
+        searchInput.value = "";
         searchInput.blur();
     }
 }
