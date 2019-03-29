@@ -28,6 +28,7 @@
       <style type="text/css">
         #links-wrap a:hover {color: <?= $config['hover_color']; ?>;}
       </style>
+      <link rel="shortcut icon" href="/jawa.ico">
   </head>
 
   <body id="homepage">
