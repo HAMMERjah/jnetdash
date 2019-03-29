@@ -1,5 +1,4 @@
-var menuHidden = true;
-var randBgTimer = null;
+var menuHidden = false;
 
 console.log(`%c ________________________________________
 < Welcome to the Jawanet >
@@ -19,12 +18,6 @@ Mousetrap.bind($.config.unlock_pattern, function() {
 
 Mousetrap.bind('esc', function() {
   setMenuVisibility(false);
-});
-
-Mousetrap.bind('r', function() {
-  clearTimeout(randBgTimer);
-  setBgImg();
-  setTimeout(setBgImg, $.config.time_to_refresh_bg);
 });
 
 Mousetrap.bind('1', function() {
@@ -89,54 +82,6 @@ function setMenuVisibility(visible) {
   }
 }
 
-// Set random background image
-function setBgImg() {
-  var bg = "";
-
-  $.getJSON("hp_assets/lib/ajax_get_image.php").done(function(data) {
-    if (data['success']) {
-      let unsplashUtmPostfix = "?utm_source=homepage&utm_medium=referral";
-
-      bg = data['url'];
-      if (bg != "" && bg != null) {
-        preloadimages([bg]).done(function(images) {
-          $("#homepage").css("background-image", "url(" + bg + ")").css("background-size", "cover");
-          $("#pic-info-wrap").removeClass("hidden");
-          $("#pic-info-url").attr("href", `${data['image_user_url']}${unsplashUtmPostfix}`).text(data['image_user_name']);
-        });
-      }
-    }
-  });
-}
-
-// http://www.javascriptkit.com/javatutors/preloadimagesplus.shtml
-function preloadimages(arr){
-  var newimages=[], loadedimages=0
-  var postaction=function(){}
-  var arr=(typeof arr!="object")? [arr] : arr
-  function imageloadpost(){
-    loadedimages++
-    if (loadedimages==arr.length){
-      postaction(newimages) //call postaction and pass in newimages array as parameter
-    }
-  }
-  for (var i=0; i<arr.length; i++){
-    newimages[i]=new Image()
-    newimages[i].src=arr[i]
-    newimages[i].onload=function(){
-        imageloadpost()
-    }
-    newimages[i].onerror=function(){
-      imageloadpost()
-    }
-  }
-  return { //return blank object with done() method
-    done:function(f){
-      postaction=f || postaction //remember user defined callback functions to be called when images load
-    }
-  }
-}
-
 if ($.config.idle_timer) {
   var inactivityTime = function () {
     var t;
@@ -169,9 +114,6 @@ $(function() {
     e.preventDefault();
     toggleMenu();
   });
-
-  setBgImg();
-  randBgTimer = setInterval(setBgImg, $.config.time_to_refresh_bg);
 
   updateClock();
   setInterval('updateClock()', 5000);

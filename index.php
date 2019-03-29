@@ -25,7 +25,6 @@
       <link rel="stylesheet" type="text/css" href="hp_assets/css/font-awesome.min.css" />
       <link rel="stylesheet" type="text/css" href="hp_assets/css/bootstrap.min.css" />
       <link rel="stylesheet" type="text/css" href="hp_assets/css/main.css" />
-      <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
       <style type="text/css">
         #links-wrap a:hover {color: <?= $config['hover_color']; ?>;}
       </style>
@@ -53,10 +52,6 @@
           echo '<div class="link col-md-4 col-xs-12"><a href="' . $link . '" title="' . $item['alt'] . '"><i class="fa fa-' . $icon . '"></i></a></div>';
         }
       ?>
-    </div>
-
-    <div id="pic-info-wrap" class="menu-item hidden bg">
-      <span id="pic-info">Picture by <a href="#" id="pic-info-url"></a> / <a href="https://unsplash.com/?utm_source=homepage&amp;utm_medium=referral">Unsplash</a></span>
     </div>
 
     <script type="text/javascript" src="hp_assets/js/jquery.min.js"></script>
