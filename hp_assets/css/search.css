@@ -1,5 +1,6 @@
 .searchWrapper{
     display: block;
+    border: solid 1px black;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -12,7 +13,6 @@
 #searchInput{
     width: 400px;
     border: 3px solid #fff;
-    background: transparent;
     padding: 15px 30px;
     border-radius: 50px;
     outline: none;
@@ -20,7 +20,6 @@
     color: #fff;
 }
 .close-btn{
-    position: absolute;
     top: 21px;
     right: 50px;
     cursor: pointer;
